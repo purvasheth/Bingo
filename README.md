@@ -1,2 +1,0 @@
-# Bingo
-Created with CodeSandbox
