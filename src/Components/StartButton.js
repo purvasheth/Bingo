@@ -55,7 +55,7 @@ const StartButton = (props) => {
     function Main() {
         //set the boolean matrix
         //check the game matrix
-        if (num != "") {
+        if (num != "" && num < 26 && num > 0) {
             let row = 0
             let col = 0
             for (let i = 0; i < 5; i++) {
@@ -71,8 +71,12 @@ const StartButton = (props) => {
             let newBool = [...bool];
             newBool[row][col] = false
             setBool(newBool)
+            Check()
         }
-        Check()
+        else {
+            alert("Please enter valid number (between 1 and 25)")
+        }
+
     }
 
     return (
