@@ -47,6 +47,7 @@ const StartButton = (props) => {
         if (lines === 5) {
             alert("You Won!")
         }
+        setNum("")
 
     }
 
